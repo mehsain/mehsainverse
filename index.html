@@ -29,6 +29,7 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
 
+<<<<<<< HEAD
   
   
   
@@ -80,5 +81,76 @@
     </div>
 
   
+=======
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="./app.js"></script>
+    
+/* Cursor Css Start */
+
+body {
+  cursor: none;
+}
+
+.mouse-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: hidden;
+}
+
+.cursor-in {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 6px;
+  height: 6px;
+  z-index: 10000001;
+  background-color: #00f7ff;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cursor-in.cursor-pointer-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 60px;
+  height: 60px;
+  background-color: #00f7ff;
+  opacity: 0.2;
+}
+
+.cursor-out {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #00f7ff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 10000000;
+  opacity: 0.5;
+  -webkit-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
+}
+
+.cursor-out.cursor-pointer-hover {
+  opacity: 0;
+}
+
+/* Cursor Css End */
+    
+    <!-- Cursor Part Start -->
+        
+    <div class="mouse-cursor cursor-out"></div>
+    <div class="mouse-cursor cursor-in"></div>
+    
+   <!-- Cursor Part End -->
+    
+>>>>>>> 84e2c01a88cacc31670e0c4cd98b22c3049a8e95
 </body>
 </html>
